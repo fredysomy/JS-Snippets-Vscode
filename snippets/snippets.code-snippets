@@ -1,10 +1,87 @@
 {
-    "A simple snip": {
-        "prefix": "htm-get",
-        "body": [
-          "<html>",
-          "</html>"
-        ],
-        "description": "A simple snip"
-      }
+  "express beginer snippet": {
+    "prefix": "exp-init",
+    "body": [
+      "var mongoose=require('mongoose');",
+      "var express=require('express');",
+      "require('dotenv').config();",
+      "var path=require('path');",
+      "var bodyParser=require('body-parser');",
+      "app=express();",
+      "app.use(bodyParser.urlencoded({extended:false}));",
+      "app.set('view engine','ejs');",
+      "app.use(bodyParser.json());",
+      "app.use(express.static(path.join(__dirname,'public')));",
+      "app.set('views',path.join(__dirname,'views'));"
+    ],
+    "description": "express beginer snippet"
+  },
+  "Create Mongo atlas connection": {
+    "prefix": "mongo-init",
+    "body": [
+      "mongoose.connect(${1:mongo-uri}, {useNewUrlParser: true, useUnifiedTopology: true }).then(err =>{",
+      "    console.log(err);",
+      "});",
+      "",
+      "mongoose.connection.once(\"open\", (err)=>{",
+      "    console.log(\"mongodb connected\")",
+      "});"
+    ],
+    "description": "Create Mongo atlas connection"
+  },
+  "Create a get route": {
+    "prefix": "route-get",
+    "body": [
+      "${1:Routername}.route('/${2:Route name(Get route)}').get((req,res)=>{",
+      "    ${3:Your Logic}",
+      "})"
+    ],
+    "description": "Create a get route"
+  },
+  "Create a post route": {
+    "prefix": "route-get",
+    "body": [
+      "${1:Routername}.route('/${2:Route name(postroute)}').post((req,res)=>{",
+      "    ${3:Your Logic}",
+      "})"
+    ],
+    "description": "Create a get route"
+  },
+  "Create a Express session": {
+    "prefix": "exp-ses",
+    "body": [
+      "const session = require('express-session');",
+      "const MongoDBStore = require('connect-mongodb-session')(session);",
+      "const store = new MongoDBStore({",
+      "    uri: ${1:Your Mongo-atlas URI},",
+      "    collection: '${2:Colection name}'",
+      "}); ",
+      "app.use(session({",
+      "    secret: \"${3:Give a randon secret}\",",
+      "    resave: true,",
+      "    saveUninitialized: true,",
+      "    unset: 'destroy',",
+      "    store: store",
+      "}));"
+    ],
+    "description": "Create a Express session"
+  },
+  "Create a Sendgrid Email snippet": {
+    "prefix": "sendg",
+    "body": [
+      "//Dont forget to npm install sendgrid module",
+      "const sgMail = require('@sendgrid/mail');",
+      "                sgMail.setApiKey(${1:SENDGRID_API_KEY});",
+      "                const msg = {",
+      "                to: ${2:To whom u are sending email},",
+      "                from: '${3:Your email}',",
+      "                subject: '${4:Subject}',",
+      "                text: ${5:Email Text} ,",
+      "                html:${6:Html email body},",
+      "                };",
+      "                sgMail.send(msg)});"
+    ],
+    "description": "Create a Sendgrid Email snippet"
+  }
+
 } 
