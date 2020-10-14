@@ -39,7 +39,7 @@
     "description": "Create a get route"
   },
   "Create a post route": {
-    "prefix": "route-get",
+    "prefix": "route-post",
     "body": [
       "${1:Routername}.route('/${2:Route name(postroute)}').post((req,res)=>{",
       "    ${3:Your Logic}",
