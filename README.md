@@ -1,5 +1,5 @@
 
-![js](https://socialify.git.ci/fredysomy/JS-Snippets-extension/jpg?fileType=JPG&font=Raleway&forks=0&issues=0&logo=https%3A%2F%2Fsecrethub.io%2Fimg%2Fvs-code.svg&owner=0&pattern=Floating%20Cogs&pulls=0&stargazers=0&theme=Dark)
+![js](https://socialify.git.ci/fredysomy/JS-Snippets-Vscode/jpg?fileType=JPG&font=Raleway&forks=0&issues=0&logo=https%3A%2F%2Fsecrethub.io%2Fimg%2Fvs-code.svg&owner=0&pattern=Floating%20Cogs&pulls=0&stargazers=0&theme=Dark)
 ## Javascript Snippets Collection
 ***
 ## Release Notes
