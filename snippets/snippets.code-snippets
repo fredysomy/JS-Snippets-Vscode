@@ -82,6 +82,24 @@
       "                sgMail.send(msg)});"
     ],
     "description": "Create a Sendgrid Email snippet"
+  },
+  "Basic Get route ": {
+    "prefix": "app-get",
+    "body": [
+      "app.get('${1:Route}',(req,res)=>{",
+      "    ${2:Logic}",
+      "});"
+    ],
+    "description": "Basic Get route "
+  },
+  "Basic Post route ": {
+    "prefix": "app-post",
+    "body": [
+      "app.post('${1:Route}',(req,res)=>{",
+      "    ${2:Logic}",
+      "});"
+    ],
+    "description": "Basic Post route "
   }
 
 } 
