@@ -15,5 +15,5 @@ Initial release of JS Vscode snippet extension
 | route-post | Snippet for POST route.(must provide Routername and route url) |
 | exp-ses | Snipet for making Express session |
 | sendg | Snippet for sendgrid email support. |
-| app-get || Get route in express app |
-| app-post || Post route in express app |
+| app-get | Get route in express app |
+| app-post | Post route in express app |
